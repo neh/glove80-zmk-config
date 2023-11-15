@@ -416,23 +416,23 @@ combos {
 
         BASE {
             bindings = <
-&kp F1     &kp F2   &kp F3    &kp F4  &kp F5                                                                    &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-&none      &none    &none     &none   &none  &none                                                       &none  &none  &none  &none  &none  &none
-&none      &kp SQT  &kp COMMA &kp DOT &kp P  &kp Y                                                       &kp F  &kp G  &kp C  &kp R  &kp L  &none
-&none      LSFT_A   LALT_O    LCTL_E  LGUI_U &kp I                                                       &kp D  LGUI_H RCTL_T LALT_N LSFT_S &none 
-&none      &kp SEMI &kp Q     &kp J   &kp K  &kp X  &kp LCTRL &kp LALT    &none  &none   &none  &kp LGUI &kp B  &kp M  &kp W  &kp V  &kp Z  &none
-&magic 2 0 &none    &none     &none   &none         NAVTAB    &lshft_caps NUMESC FUNBSP  NUMSPC SYMRET          &none  &none  &none  &none  &none
+&none      &none    &none     &none   &none                                                                &none  &none  &none  &none  &none
+&none      &none    &none     &none   &none  &none                                                  &none  &none  &none  &none  &none  &none
+&none      &kp SQT  &kp COMMA &kp DOT &kp P  &kp Y                                                  &kp F  &kp G  &kp C  &kp R  &kp L  &none
+&none      LSFT_A   LALT_O    LCTL_E  LGUI_U &kp I                                                  &kp D  LGUI_H RCTL_T LALT_N LSFT_S &none 
+&none      &kp SEMI &kp Q     &kp J   &kp K  &kp X  &none  &none       &none  &none   &none  &none  &kp B  &kp M  &kp W  &kp V  &kp Z  &none
+&magic 2 0 &none    &none     &none   &none         NAVTAB &lshft_caps NUMESC FUNBSP  NUMSPC SYMRET        &none  &none  &none  &none  &none
             >;
         };
 
         NAV {
             bindings = <
-&kp C_BRI_DN &kp C_BRI_UP &trans     &trans    &trans                                                                        &trans   &trans    &trans    &trans    &kp PAUSE_BREAK
-&trans       &trans       &trans     &trans    &trans     &trans                                                      &trans &trans   &trans    &trans    &trans    &kp PRINTSCREEN
-&trans       &bt_3        &bt_2      &bt_1     &bt_0      &out OUT_USB                                                &trans PTAB     &kp PG_DN &kp PG_UP NTAB      &kp SCROLLLOCK
-&trans       &kp LSHFT    &kp LALT   &kp LCTRL &kp LGUI   &kp C_VOL_UP                                                &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
-&trans       &kp C_PREV   &kp C_MUTE &kp C_PP  &kp C_NEXT &kp C_VOL_DN &trans  &trans  &to 0   &trans  &trans  &trans &trans &trans   &kp END   &kp HOME  &trans    &trans
-&magic 2 0   &trans       &trans     &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans        &trans   &trans    &trans    &trans    &trans
+&trans &trans     &trans     &trans    &trans                                                                        &trans   &trans    &trans    &trans    &trans
+&trans &trans     &trans     &trans    &trans     &trans                                                      &trans &trans   &trans    &trans    &trans    &trans
+&trans &bt_3      &bt_2      &bt_1     &bt_0      &out OUT_USB                                                &trans PTAB     &kp PG_DN &kp PG_UP NTAB      &trans
+&trans &kp LSHFT  &kp LALT   &kp LCTRL &kp LGUI   &kp C_VOL_UP                                                &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
+&trans &kp C_PREV &kp C_MUTE &kp C_PP  &kp C_NEXT &kp C_VOL_DN &trans  &trans  &trans  &trans  &trans  &trans &trans &trans   &kp END   &kp HOME  &trans    &trans
+&trans &trans     &trans     &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans        &trans   &trans    &trans    &trans    &trans
             >;
         };
 
