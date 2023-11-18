@@ -405,6 +405,8 @@ combos {
 
 #define CS_DOT &lh_hr_mt LC(LSHFT) DOT
 #define CS_C &rh_hr_mt LC(LSHFT) C
+#define GS_P &lh_hr_mt LG(LSHFT) P
+#define GS_G &rh_hr_mt LG(LSHFT) G
 
 #define NAVTAB &ht_lt NAV TAB
 #define NUMESC &ht_lt NUM ESC
@@ -421,7 +423,7 @@ combos {
             bindings = <
 &none      &none    &none     &none   &none                                                                &none  &none  &none  &none  &none
 &none      &none    &none     &none   &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none      &kp SQT  &kp COMMA CS_DOT  &kp P  &kp Y                                                  &kp F  &kp G  CS_C   &kp R  &kp L  &none
+&none      &kp SQT  &kp COMMA CS_DOT  GS_P   &kp Y                                                  &kp F  GS_G   CS_C   &kp R  &kp L  &none
 &none      LSFT_A   LALT_O    LCTL_E  LGUI_U &kp I                                                  &kp D  LGUI_H RCTL_T LALT_N LSFT_S &none 
 &none      &kp SEMI &kp Q     &kp J   &kp K  &kp X  &none  &none       &none  &none   &none  &none  &kp B  &kp M  &kp W  &kp V  &kp Z  &none
 &magic 2 0 &none    &none     &none   &none         NAVTAB &lshft_caps NUMESC FUNBSP  NUMSPC SYMRET        &none  &none  &none  &none  &none
