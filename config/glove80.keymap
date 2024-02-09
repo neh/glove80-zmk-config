@@ -180,7 +180,7 @@
 #define STICKY_KEY_RELEASE_AFTER_MS 600
 
 /* How quickly Combo keys must be pressed together */
-#define COMBO_TIMEOUT_MS 25
+#define COMBO_TIMEOUT_MS 45
 
 /* How quickly both thumb Shift keys must be pressed together to activate Caps
    Word */
@@ -365,7 +365,7 @@ MOD_MORPH(lshft_caps, &sk LSHFT, &caps_word, MOD_LSFT)
 /* Combo helper */
 #define ZMK_COMBO(NAME, TIMEOUT_MS, KEY_POSITIONS, BINDINGS) \
     NAME { \
-        require-prior-idle-ms = <150>; \
+        require-prior-idle-ms = <100>; \
         timeout-ms = <TIMEOUT_MS>; \
         key-positions = <KEY_POSITIONS>; \
         bindings = <BINDINGS>; \
