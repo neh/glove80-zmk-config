@@ -397,10 +397,10 @@ combos {
 #define PTAB &kp LC(LS(TAB))
 #define NTAB &kp LC(TAB)
 
-#define LSFT_A &lh_hr_mt LSHFT A
-#define LALT_O &lh_hr_mt LALT O
+#define LSFT_C &lh_hr_mt LSHFT C
+#define LALT_I &lh_hr_mt LALT I
 #define LCTL_E &lh_hr_mt LCTRL E
-#define LGUI_U &lh_hr_mt LGUI U
+#define LGUI_A &lh_hr_mt LGUI A
 #define LGUI_H &rh_hr_mt LGUI H
 #define RCTL_T &rh_hr_mt RCTRL T
 #define LALT_N &rh_hr_mt LALT N
@@ -412,9 +412,12 @@ combos {
 #define GS_G &rh_hr_mt LG(LSHFT) G
 
 #define NAVTAB &ht_lt NAV TAB
+#define NAVESC &ht_lt NAV ESC
 #define NUMESC &ht_lt NUM ESC
 #define FUNBSP &rt_lt FUN BSPC
+#define FUNR &rt_lt FUN R
 #define NUMSPC &ht_lt NUM SPACE
+#define NUMBSPC &ht_lt NUM BSPC
 #define SYMRET &ht_lt SYM ENTER
 
 / {
@@ -424,12 +427,12 @@ combos {
 
         BASE {
             bindings = <
-&none      &none    &none     &none   &none                                                                &none  &none  &none  &none  &none
-&none      &none    &none     &none   &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none      &kp SQT  &kp COMMA CS_DOT  GS_P   &kp Y                                                  &kp F  GS_G   CS_C   &kp R  &kp L  &none
-&none      LSFT_A   LALT_O    LCTL_E  LGUI_U &kp I                                                  &kp D  LGUI_H RCTL_T LALT_N LSFT_S &none 
-&none      &kp SEMI &kp Q     &kp J   &kp K  &kp X  &none  &none       &none  &none   &none  &none  &kp B  &kp M  &kp W  &kp V  &kp Z  &none
-&magic 2 0 &none    &none     &none   &none         NAVTAB &lshft_caps NUMESC FUNBSP  NUMSPC SYMRET        &none  &none  &none  &none  &none
+&none      &none    &none     &none     &none                                                                   &none  &none  &none  &none  &none
+&none      &none    &none     &none     &none  &none                                                     &none  &none  &none  &none  &none  &none
+&none      &kp Q    &kp SEMI  &kp COMMA CS_DOT &kp EQUAL                                                 &kp X  &kp M  &kp G  &kp W  &kp V  &none
+&none      LSFT_C   LALT_I    LCTL_E    LGUI_A &kp SQT                                                   &kp K  LGUI_H RCTL_T LALT_N LSFT_S &none 
+&none      &kp B    &kp Y     &kp O     &kp U  &kp Z     &none  &none       &none   &none  &none  &none  &kp J  &kp L  &kp D  &kp P  &kp F  &none
+&magic 2 0 &none    &none     &none     &none            NAVESC &lshft_caps NUMBSPC FUNR  NUMSPC SYMRET        &none  &none  &none  &none  &none
             >;
         };
 
@@ -437,10 +440,10 @@ combos {
             bindings = <
 &trans &trans     &trans     &trans    &trans                                                                        &trans   &trans    &trans    &trans    &trans
 &trans &trans     &trans     &trans    &trans     &trans                                                      &trans &trans   &trans    &trans    &trans    &trans
-&trans &bt_3      &bt_2      &bt_1     &bt_0      &out OUT_USB                                                &trans PTAB     &kp PG_DN &kp PG_UP NTAB      &trans
+&trans &bt_3      &bt_2      &bt_1     &bt_0      &out OUT_USB                                                &trans PTAB     &kp PG_UP &kp HOME  NTAB      &trans
 &trans &kp LSHFT  &kp LALT   &kp LCTRL &kp LGUI   &kp C_VOL_UP                                                &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
-&trans &kp C_PREV &kp C_MUTE &kp C_PP  &kp C_NEXT &kp C_VOL_DN &trans  &trans  &trans  &trans  &trans  &trans &trans &trans   &kp END   &kp HOME  &trans    &trans
-&trans &trans     &trans     &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans        &trans   &trans    &trans    &trans    &trans
+&trans &kp C_PREV &kp C_MUTE &kp C_PP  &kp C_NEXT &kp C_VOL_DN &trans  &trans  &trans  &trans  &trans  &trans &trans &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans
+&trans &trans     &trans     &trans    &trans                  &trans  &trans  &trans  &trans  &kp TAB &trans        &trans   &trans    &trans    &trans    &trans
             >;
         };
 
