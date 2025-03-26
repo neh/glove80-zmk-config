@@ -359,7 +359,8 @@ REACH_THUMB_LAYER_TAP(rt_lt, &kp)  /* Used for Media and Function layers */
     )
 
 MOD_MORPH(lshft_caps, &sk LSHFT, &caps_word, MOD_LSFT)
-
+MOD_MORPH(dot_col, &kp DOT, &kp LS(SEMI), MOD_LSFT)
+MOD_MORPH(com_sem, &kp COMMA, &kp SEMI, MOD_LSFT)
 
 
 /* Combo helper */
@@ -427,12 +428,12 @@ combos {
 
         BASE {
             bindings = <
-&none      &none    &none     &none     &none                                                                   &none  &none  &none  &none  &none
-&none      &none    &none     &none     &none  &none                                                     &none  &none  &none  &none  &none  &none
-&none      &kp Q    &kp SEMI  &kp COMMA CS_DOT &kp EQUAL                                                 &kp X  &kp M  &kp G  &kp W  &kp V  &none
-&none      LSFT_C   LALT_I    LCTL_E    LGUI_A &kp SQT                                                   &kp K  LGUI_H RCTL_T LALT_N LSFT_S &none 
-&none      &kp B    &kp Y     &kp O     &kp U  &kp Z     &none  &none       &none   &none  &none  &none  &kp J  &kp L  &kp D  &kp P  &kp F  &none
-&magic 2 0 &none    &none     &none     &none            NAVESC &lshft_caps NUMBSPC FUNR  NUMSPC SYMRET        &none  &none  &none  &none  &none
+&none      &none    &none     &none    &none                                                                     &none  &none  &none  &none  &none
+&none      &none    &none     &none    &none    &none                                                     &none  &none  &none  &none  &none  &none
+&none      &kp Q    &kp SEMI  &com_sem &dot_col &kp EQUAL                                                 &kp X  &kp M  &kp G  &kp W  &kp V  &none
+&none      LSFT_C   LALT_I    LCTL_E   LGUI_A   &kp SQT                                                   &kp K  LGUI_H RCTL_T LALT_N LSFT_S &none 
+&none      &kp B    &kp Y     &kp O    &kp U    &kp Z     &none  &none       &none   &none  &none  &none  &kp J  &kp L  &kp D  &kp P  &kp F  &none
+&magic 2 0 &none    &none     &none    &none              NAVESC &lshft_caps NUMBSPC FUNR  NUMSPC SYMRET        &none  &none  &none  &none  &none
             >;
         };
 
