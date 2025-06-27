@@ -428,12 +428,12 @@ combos {
 
         BASE {
             bindings = <
-&none      &none    &none     &none    &none                                                                     &none  &none  &none  &none  &none
-&none      &none    &none     &none    &none    &none                                                     &none  &none  &none  &none  &none  &none
-&none      &kp Q    &kp SEMI  &com_sem &dot_col &kp EQUAL                                                 &kp X  &kp M  &kp G  &kp W  &kp V  &none
-&none      LSFT_C   LALT_I    LCTL_E   LGUI_A   &kp SQT                                                   &kp K  LGUI_H RCTL_T LALT_N LSFT_S &none 
-&none      &kp B    &kp Y     &kp O    &kp U    &kp Z     &none  &none       &none   &none  &none  &none  &kp J  &kp L  &kp D  &kp P  &kp F  &none
-&magic 2 0 &none    &none     &none    &none              NAVESC &lshft_caps NUMBSPC FUNR  NUMSPC SYMRET        &none  &none  &none  &none  &none
+&none      &none    &none     &none     &none                                                                     &none  &none  &none  &none  &none
+&none      &none    &none     &none     &none    &none                                                     &none  &none  &none  &none  &none  &none
+&none      &kp SQT  &kp EQUAL &kp MINUS &dot_col &kp EQUAL                                                 &kp X  &kp M  &kp G  &kp W  &kp Z  &none
+&kp B      LSFT_C   LALT_I    LCTL_E    LGUI_A   &com_sem                                                  &kp K  LGUI_H RCTL_T LALT_N LSFT_S &kp V
+&none      &kp Q    &kp Y     &kp U     &kp O    &kp X     &none  &none       &none   &none  &none  &none  &kp J  &kp L  &kp D  &kp P  &kp F  &none
+&magic 2 0 &none    &none     &none     &none              NAVESC &lshft_caps NUMBSPC FUNR   NUMSPC SYMRET        &none  &none  &none  &none  &none
             >;
         };
 
@@ -441,9 +441,9 @@ combos {
             bindings = <
 &trans &trans     &trans     &trans    &trans                                                                        &trans   &trans    &trans    &trans    &trans
 &trans &trans     &trans     &trans    &trans     &trans                                                      &trans &trans   &trans    &trans    &trans    &trans
-&trans &bt_3      &bt_2      &bt_1     &bt_0      &out OUT_USB                                                &trans PTAB     &kp PG_UP &kp HOME  NTAB      &trans
-&trans &kp LSHFT  &kp LALT   &kp LCTRL &kp LGUI   &kp C_VOL_UP                                                &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
-&trans &kp C_PREV &kp C_MUTE &kp C_PP  &kp C_NEXT &kp C_VOL_DN &trans  &trans  &trans  &trans  &trans  &trans &trans &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans
+&trans &bt_3      &bt_2      &bt_1     &bt_0      &out OUT_USB                                                &trans PTAB     &kp UP    &kp DOWN  NTAB      &trans
+&trans &kp LSHFT  &kp LALT   &kp LCTRL &kp LGUI   &kp C_VOL_UP                                                &trans PTAB     &kp LEFT  &kp RIGHT NTAB      &trans
+&trans &kp C_PREV &kp C_MUTE &kp C_PP  &kp C_NEXT &kp C_VOL_DN &trans  &trans  &trans  &trans  &trans  &trans &trans &kp HOME &kp PG_UP &kp PG_DN &kp END   &trans
 &trans &trans     &trans     &trans    &trans                  &trans  &trans  &trans  &trans  &kp TAB &trans        &trans   &trans    &trans    &trans    &trans
             >;
         };
@@ -461,11 +461,11 @@ combos {
 
         NUM {
             bindings = <
-&trans &trans    &trans &trans &trans                                                                  &trans   &trans    &trans   &trans    &trans
-&trans &trans    &trans &trans &trans &trans                                                    &trans &trans   &trans    &trans   &trans    &trans
-&trans &kp LBKT  &kp N9 &kp N8 &kp N7 &kp RBKT                                                  &trans &trans   &trans    &trans   &trans    &trans
+&trans &trans    &trans &trans &trans                                                                  &trans   &trans       &trans   &trans    &trans
+&trans &trans    &trans &trans &trans &trans                                                    &trans &trans   &trans        &trans   &trans    &trans
+&trans &kp LBKT  &kp N9 &kp N8 &kp N7 &kp RBKT                                                  &trans &trans   &kp LS(LBKT)  &kp LS(RBKT) &trans    &trans
 &trans &kp N0    &kp N3 &kp N2 &kp N1 &kp FSLH                                                  &trans &kp LGUI &kp RCTRL &kp LALT &kp LSHFT &trans
-&trans &kp GRAVE &kp N6 &kp N5 &kp N4 &kp BSLH &trans    &trans  &trans    &trans &trans &trans &trans &trans   &kp EQUAL &trans   &trans    &trans
+&trans &kp GRAVE &kp N6 &kp N5 &kp N4 &kp BSLH &trans    &trans  &trans    &trans &trans &trans &trans &trans   &kp LS(COMMA) &kp LS(DOT)   &trans    &trans
 &trans &trans    &trans &trans &trans          &kp COMMA &kp DOT &kp MINUS &trans &trans &trans        &trans   &trans    &trans   &trans    &trans
             >;
         };
