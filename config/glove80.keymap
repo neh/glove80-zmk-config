@@ -328,6 +328,8 @@ behaviors {
 HOME_ROW_MOD_LH(lh_hr_mt, &kp)  /* Left hand */
 HOME_ROW_MOD_RH(rh_hr_mt, &kp)  /* Right hand */
 
+HOME_ROW_MOD_LH(lms, LSHIFT, &kp)
+
 
 /* Home thumb layer tap without quick tap; faster layer switching */
 #define HOME_THUMB_LAYER_TAP(NAME, TAP_BINDING) \
@@ -431,7 +433,7 @@ combos {
 &none      &none    &none     &none     &none                                                                     &none  &none  &none  &none  &none
 &none      &none    &none     &none     &none    &none                                                     &none  &none  &none  &none  &none  &none
 &none      &kp SQT  &kp EQUAL &kp MINUS &dot_col &kp EQUAL                                                 &kp X  &kp M  &kp G  &kp W  &kp Z  &none
-&kp B      LSFT_C   LALT_I    LCTL_E    LGUI_A   &com_sem                                                  &kp K  LGUI_H RCTL_T LALT_N LSFT_S &kp V
+&kp B      &lms C   LALT_I    LCTL_E    LGUI_A   &com_sem                                                  &kp K  LGUI_H RCTL_T LALT_N LSFT_S &kp V
 &none      &kp Q    &kp Y     &kp U     &kp O    &kp X     &none  &none       &none   &none  &none  &none  &kp J  &kp L  &kp D  &kp P  &kp F  &none
 &magic 2 0 &none    &none     &none     &none              NAVESC &lshft_caps NUMBSPC FUNR   NUMSPC SYMRET        &none  &none  &none  &none  &none
             >;
