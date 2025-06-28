@@ -278,6 +278,16 @@ behaviors {
         bindings = <&kp>, <TAP>; \
     )
 
+#define HOME_ROW_MOD_HELPER_MOD(NAME, KEY_POSITIONS, MOD, TAP) \
+    BALANCED_HOLD_TAP(NAME, \
+        tapping-term-ms = <HOME_ROW_MODS_TAPPING_TERM_MS>;  /* Mouse usage */ \
+        quick-tap-ms = <HOME_ROW_MODS_QUICK_TAP_MS>;  /* Typing cool down */ \
+        require-prior-idle-ms = <150>; \
+        hold-trigger-key-positions = <KEY_POSITIONS>;  /* Use other hand */ \
+        hold-trigger-on-release; \
+        bindings = <MOD>, <TAP>; \
+    )
+
 /* Left hand key positions for use with right hand mods */
 #define LEFT_HAND_KEYS \
     /*    ┌────┬────┬────┬────┬────┐                                       */ \
@@ -325,10 +335,15 @@ behaviors {
 #define HOME_ROW_MOD_RH(NAME, TAP) \
     HOME_ROW_MOD_HELPER(NAME, LEFT_HAND_KEYS THUMB_KEYS, TAP)
 
+#define HOME_ROW_MOD_LHM(NAME, MOD, TAP) \
+    HOME_ROW_MOD_HELPER_MOD(NAME, RIGHT_HAND_KEYS THUMB_KEYS, MOD, TAP)
+#define HOME_ROW_MOD_RHM(NAME, MOD, TAP) \
+    HOME_ROW_MOD_HELPER_MOD(NAME, LEFT_HAND_KEYS THUMB_KEYS, MOD, TAP)
+
 HOME_ROW_MOD_LH(lh_hr_mt, &kp)  /* Left hand */
 HOME_ROW_MOD_RH(rh_hr_mt, &kp)  /* Right hand */
 
-HOME_ROW_MOD_LH(lms, LSHIFT, &kp)
+HOME_ROW_MOD_LHM(lms, LSHIFT, &kp)
 
 
 /* Home thumb layer tap without quick tap; faster layer switching */
