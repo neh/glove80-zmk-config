@@ -433,9 +433,9 @@ combos {
             bindings = <
 &none      &none    &none     &none     &none                                                                     &none  &none  &none  &none  &none
 &none      &none    &none     &none     &none    &none                                                     &none  &none  &none  &none  &none  &none
-&none      &kp SQT  &kp EQUAL &kp MINUS &dot_col &kp EQUAL                                                 &kp X  &kp M  &kp G  &kp W  &kp Z  &none
+&none      &kp SQT  &kp EQUAL &kp MINUS &dot_col &kp SLASH                                                 &kp X  &kp L  &kp D  &kp W  &kp Z  &none
 &kp B      HRML(C,  I,        E,        A)       &com_sem                                                  &kp K  HRMR(H,T,     N,     S)     &kp V
-&none      &kp Q    &kp Y     &kp U     &kp O    &kp X     &none  &none       &none   &none  &none  &none  &kp J  &kp L  &kp D  &kp P  &kp F  &none
+&none      &kp Q    &kp Y     &kp U     &kp O    &kp BSLH  &none  &none       &none   &none  &none  &none  &kp J  &kp M  &kp G  &kp P  &kp F  &none
 &magic 2 0 &none    &none     &none     &none              NAVESC &lshft_caps NUMBSPC FUNR   NUMSPC SYMRET        &none  &none  &none  &none  &none
             >;
         };
