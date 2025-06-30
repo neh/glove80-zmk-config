@@ -434,7 +434,7 @@ combos {
             bindings = <
 &none      &none    &none     &none     &none                                                                     &none  &none  &none  &none  &none
 &none      &none    &none     &none     &none    &none                                                     &none  &none  &none  &none  &none  &none
-&none      &kp SQT  &kp EQUAL &kp MINUS &dot_col &kp SLASH                                                 &kp X  &kp L  &kp D  &kp W  &kp Z  &none
+&kp TAB    &kp SQT  &kp EQUAL &kp MINUS &dot_col &kp SLASH                                                 &kp X  &kp L  &kp D  &kp W  &kp Z  &none
 &kp B      HRML(C,  I,        E,        A)       &com_sem                                                  &kp K  HRMR(H,T,     N,     S)     &kp V
 &none      &kp Q    &kp Y     &kp U     &kp O    &kp BSLH  &none  &none       &none   &none  &none  &none  &kp J  &kp M  &kp G  &kp P  &kp F  &none
 &magic 2 0 &none    &none     &none     &none              NAVBSP &lshft_caps NUMESC  FUNR   NUMSPC SYMRET        &none  &none  &none  &none  &none
@@ -465,12 +465,12 @@ combos {
 
         NUM {
             bindings = <
-&trans &trans    &trans &trans &trans                                                                  &trans   &trans       &trans   &trans    &trans
-&trans &trans    &trans &trans &trans &trans                                                    &trans &trans   &trans        &trans   &trans    &trans
-&trans &kp LBKT  &kp N9 &kp N8 &kp N7 &kp RBKT                                                  &trans &trans   &kp LS(LBKT)  &kp LS(RBKT) &trans    &trans
-&trans &kp N0    &kp N3 &kp N2 &kp N1 &kp FSLH                                                  &trans HRML(LS(N9), LBKT, RBKT, LS(N0))  &trans
-&trans &kp GRAVE &kp N6 &kp N5 &kp N4 &kp BSLH &trans    &trans  &trans    &trans &trans &trans &trans &trans   &kp LS(COMMA) &kp LS(DOT)   &trans    &trans
-&trans &trans    &trans &trans &trans          &kp COMMA &kp DOT &kp MINUS &trans &trans &trans        &trans   &trans    &trans   &trans    &trans
+&trans &trans    &trans &trans &trans                                                                  &trans       &trans        &trans       &trans  &trans
+&trans &trans    &trans &trans &trans &trans                                                    &trans &trans       &trans        &trans       &trans  &trans
+&trans &kp LBKT  &kp N9 &kp N8 &kp N7 &kp RBKT                                                  &trans &kp GRAVE    &kp LS(LBKT)  &kp LS(RBKT) &trans  &trans
+&trans &kp N0    &kp N3 &kp N2 &kp N1 &kp FSLH                                                  &trans HRML(LS(N9), LBKT,         RBKT,        LS(N0)) &trans
+&trans &kp GRAVE &kp N6 &kp N5 &kp N4 &kp BSLH &trans    &trans  &trans    &trans &trans &trans &trans &trans       &kp LS(COMMA) &kp LS(DOT)  &trans  &trans
+&trans &trans    &trans &trans &trans          &trans    &trans  &trans    &trans &trans &trans        &trans       &trans        &trans       &trans  &trans
             >;
         };
 
