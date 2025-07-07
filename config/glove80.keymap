@@ -420,6 +420,7 @@ combos {
 #define NAVBSP &ht_lt NAV BSPC
 #define NUMESC &ht_lt NUM ESC
 #define FUNBSP &rt_lt FUN BSPC
+#define FUNRET &rt_lt FUN ENTER
 #define FUNR &rt_lt FUN R
 #define NUMSPC &ht_lt NUM SPACE
 #define NUMBSPC &ht_lt NUM BSPC
@@ -437,7 +438,7 @@ combos {
 &kp TAB    &kp SQT  &kp EQUAL &kp MINUS &dot_col &kp BSLH                                                  &kp K  &kp L  &kp D  &kp W  &kp Z  &none
 &kp B      HRML(C,  I,        E,        A)       &com_sem                                                  &kp J  HRMR(H,T,     N,     S)     &kp V
 &none      &kp Q    &kp Y     &kp U     &kp O    &kp SLASH &none  &none       &none   &none  &none  &none  &kp X  &kp M  &kp G  &kp P  &kp F  &none
-&magic 2 0 &none    &none     &none     &none              NAVBSP &lshft_caps NUMESC  FUNR   NUMSPC SYMRET        &none  &none  &none  &none  &none
+&magic 2 0 &none    &none     &none     &none              NAVBSP &lshft_caps NUMESC  FUNRET NUMSPC &kp R         &none  &none  &none  &none  &none
             >;
         };
 
