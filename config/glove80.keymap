@@ -384,6 +384,7 @@ combos {
     /* COMBO(combo_slash, 42 60, &kp SLASH) */
     /* COMBO(combo_backslash, 43 61, &kp BACKSLASH) */
     COMBO(combo_tab, 59 60, &kp TAB)
+    COMBO(combo_esc, 60 61, &kp ESC)
     /* COMBO(combo_equal, 60 61, &kp EQUAL) */
     /* COMBO(combo_lparen, 38 50, &kp LEFT_PARENTHESIS) */
     /* COMBO(combo_lbracket, 37 49, &kp LEFT_BRACKET) */
