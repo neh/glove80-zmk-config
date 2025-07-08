@@ -379,18 +379,18 @@ MOD_MORPH(com_sem, &kp COMMA, &kp SEMI, MOD_LSFT)
 combos {
     compatible = "zmk,combos";
 
-    COMBO(combo_dash, 49 50, &kp MINUS)
-    COMBO(combo_underscore, 48 49, &kp UNDERSCORE)
-    COMBO(combo_slash, 42 60, &kp SLASH)
-    COMBO(combo_backslash, 43 61, &kp BACKSLASH)
-    COMBO(combo_plus, 59 60, &kp PLUS)
-    COMBO(combo_equal, 60 61, &kp EQUAL)
-    COMBO(combo_lparen, 38 50, &kp LEFT_PARENTHESIS)
-    COMBO(combo_lbracket, 37 49, &kp LEFT_BRACKET)
-    COMBO(combo_lbrace, 36 48, &kp LEFT_BRACE)
-    COMBO(combo_rparen, 26 38, &kp RIGHT_PARENTHESIS)
-    COMBO(combo_rbracket, 25 37, &kp RIGHT_BRACKET)
-    COMBO(combo_rbrace, 24 36, &kp RIGHT_BRACE)
+    /* COMBO(combo_dash, 49 50, &kp MINUS) */
+    /* COMBO(combo_underscore, 48 49, &kp UNDERSCORE) */
+    /* COMBO(combo_slash, 42 60, &kp SLASH) */
+    /* COMBO(combo_backslash, 43 61, &kp BACKSLASH) */
+    COMBO(combo_tab, 59 60, &kp TAB)
+    /* COMBO(combo_equal, 60 61, &kp EQUAL) */
+    /* COMBO(combo_lparen, 38 50, &kp LEFT_PARENTHESIS) */
+    /* COMBO(combo_lbracket, 37 49, &kp LEFT_BRACKET) */
+    /* COMBO(combo_lbrace, 36 48, &kp LEFT_BRACE) */
+    /* COMBO(combo_rparen, 26 38, &kp RIGHT_PARENTHESIS) */
+    /* COMBO(combo_rbracket, 25 37, &kp RIGHT_BRACKET) */
+    /* COMBO(combo_rbrace, 24 36, &kp RIGHT_BRACE) */
 };
 
 };
