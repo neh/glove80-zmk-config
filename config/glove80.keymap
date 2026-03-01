@@ -361,6 +361,8 @@ REACH_THUMB_LAYER_TAP(rt_lt, &kp)  /* Used for Media and Function layers */
 MOD_MORPH(lshft_caps, &sk LSHFT, &caps_word, MOD_LSFT)
 MOD_MORPH(dot_col, &kp DOT, &kp LS(SEMI), MOD_LSFT)
 MOD_MORPH(com_sem, &kp COMMA, &kp SEMI, MOD_LSFT)
+MOD_MORPH(quebng, &kp QUESTION, &kp EXCLAMATION, MOD_LSFT)
+MOD_MORPH(slashy, &kp SLASH, &kp BACKSLASH, MOD_LSFT)
 
 
 /* Combo helper */
@@ -435,12 +437,12 @@ combos {
 
         BASE {
             bindings = <
-&none      &none    &none     &none     &none                                                                     &none  &none  &none  &none  &none
-&none      &none    &none     &none     &none    &none                                                     &none  &none  &none  &none  &none  &none
-&kp TAB    &kp SQT  &kp EQUAL &kp MINUS &dot_col &kp BSLH                                                  &kp K  &kp L  &kp D  &kp W  &kp Z  &none
-&kp B      HRML(C,  I,        E,        A)       &com_sem                                                  &kp J  HRMR(H,T,     N,     S)     &kp V
-&none      &kp Q    &kp Y     &kp U     &kp O    &kp SLASH &none  &none       &none   &none  &none  &none  &kp X  &kp M  &kp G  &kp P  &kp F  &none
-&magic 2 0 &none    &none     &none     &none              NAVBSP &lshft_caps NUMESC  FUNRET NUMSPC &kp R         &none  &none  &none  &none  &none
+&none      &none    &none     &none     &none                                                                      &none  &none  &none  &none  &none
+&none      &none    &none     &none     &none    &none                                                     &none   &none  &none  &none  &none  &none
+&kp TAB    &kp SQT  &kp X     &com_sem  &dot_col &kp EQUAL                                                 &slashy &kp L  &kp D  &kp W  &kp V  &none
+&kp Q      HRML(C,  I,        E,        A)       &kp MINUS                                                 &kp K   HRMR(H,T,     N,     S)     &kp Z
+&none      &kp B    &kp Y     &kp U     &kp O    &quebng   &none  &none       &none   &none  &none  &none  &kp J   &kp M  &kp G  &kp P  &kp F  &none
+&magic 2 0 &none    &none     &none     &none              NAVBSP &lshft_caps NUMESC  FUNRET NUMSPC &kp R          &none  &none  &none  &none  &none
             >;
         };
 
@@ -468,12 +470,12 @@ combos {
 
         NUM {
             bindings = <
-&trans &trans    &trans &trans &trans                                                                  &trans       &trans        &trans       &trans  &trans
-&trans &trans    &trans &trans &trans &trans                                                    &trans &trans       &trans        &trans       &trans  &trans
-&trans &kp LBKT  &kp N9 &kp N8 &kp N7 &kp RBKT                                                  &trans &kp GRAVE    &kp LS(LBKT)  &kp LS(RBKT) &trans  &trans
-&trans HRML(N0,  N3,    N2,    N1)    &kp FSLH                                                  &trans HRMR(LS(N9), LBKT,         RBKT,        LS(N0)) &trans
-&trans &kp GRAVE &kp N6 &kp N5 &kp N4 &kp BSLH &trans    &trans  &trans    &trans &trans &trans &trans &trans       &kp LS(COMMA) &kp LS(DOT)  &trans  &trans
-&trans &trans    &trans &trans &trans          &trans    &trans  &trans    &trans &trans &trans        &trans       &trans        &trans       &trans  &trans
+&trans &trans      &trans    &trans &trans                                                                     &trans       &trans        &trans       &trans  &trans
+&trans &trans      &trans    &trans &trans &trans                                                    &trans    &trans       &trans        &trans       &trans  &trans
+&trans &kp PERCENT &kp CARET &kp N0 &kp N9 &kp AMPS                                                  &kp TILDE &kp GRAVE    &kp LS(LBKT)  &kp LS(RBKT) &trans  &trans
+&trans HRML(N4,    N3,       N2,    N1)    &kp DOLLAR                                                &kp PIPE  HRMR(LS(N9), LBKT,         RBKT,        LS(N0)) &trans
+&trans &kp N8      &kp N7    &kp N6 &kp N5 &kp HASH &trans    &trans  &trans    &trans &trans &trans &kp AT    &kp STAR     &kp LS(COMMA) &kp LS(DOT)  &trans  &trans
+&trans &trans      &trans    &trans &trans          &trans    &trans  &trans    &trans &trans &trans           &trans       &trans        &trans       &trans  &trans
             >;
         };
 
@@ -490,12 +492,12 @@ combos {
 
         FUN {
             bindings = <
-&trans &trans  &trans &trans &trans                                                                   &trans   &trans    &trans   &trans    &trans
-&trans &trans  &trans &trans &trans &trans                                                &trans      &trans   &trans    &trans   &trans    &trans
-&trans &kp F12 &kp F9 &kp F8 &kp F7 &bootloader                                           &bootloader &trans   &trans    &trans   &trans    &trans
-&trans &kp F10 &kp F3 &kp F2 &kp F1 &trans                                                &trans      &kp LGUI &kp RCTRL &kp LALT &kp LSHFT &trans
-&trans &kp F11 &kp F6 &kp F5 &kp F4 &trans      &trans &trans &trans &trans &trans &trans &trans      &trans   &trans    &trans   &trans    &trans
-&trans &trans  &trans &trans &trans             &trans &trans &trans &trans &trans &trans             &trans   &trans    &trans   &trans    &trans
+&trans &trans  &trans  &trans  &trans                                                                   &trans   &trans    &trans   &trans    &trans
+&trans &trans  &trans  &trans  &trans &trans                                                &trans      &trans   &trans    &trans   &trans    &trans
+&trans &kp F12 &kp F11 &kp F10 &kp F9 &bootloader                                           &bootloader &trans   &trans    &trans   &trans    &trans
+&trans &kp F4  &kp F3  &kp F2  &kp F1 &trans                                                &trans      &kp LGUI &kp RCTRL &kp LALT &kp LSHFT &trans
+&trans &kp F8  &kp F7  &kp F6  &kp F5 &trans      &trans &trans &trans &trans &trans &trans &trans      &trans   &trans    &trans   &trans    &trans
+&trans &trans  &trans  &trans  &trans             &trans &trans &trans &trans &trans &trans             &trans   &trans    &trans   &trans    &trans
             >;
         };
 
