@@ -449,7 +449,7 @@ combos {
 &kp TAB    &kp SQT  &kp X     &com_sem  &dot_col &kp EQUAL                                                 &slashy &kp L  &kp D  &kp W  &kp V  &none
 &kp Q      HRML(C,  I,        E,        A)       &kp MINUS                                                 &kp K   HRMR(H,T,     N,     S)     &kp Z
 &none      &kp B    &kp Y     &kp U     &kp O    &quebng   &none  &none       &none   &none  &none  &none  &kp J   &kp M  &kp G  &kp P  &kp F  &none
-&magic 2 0 &none    &none     &none     &none              NAVRET &lshft_caps NUMESC  FUNBSP NUMSPC &kp R          &none  &none  &none  &none  &none
+&magic 3 0 &none    &none     &none     &none              NAVRET &lshft_caps NUMESC  FUNBSP NUMSPC &kp R          &none  &none  &none  &none  &none
             >;
         };
 
@@ -457,10 +457,10 @@ combos {
             bindings = <
 &none      &none    &none     &none     &none                                                                                  &none  &none  &none  &none  &none
 &kp GRAVE  &kp N1   &kp N2    &kp N3    &kp N4   &kp N5                                                                &kp N6  &kp N7 &kp N8 &kp N9 &kp N0 &none
-&kp TAB    &kp SQT  &kp X     &com_sem  &kp DOT  &kp EQUAL                                                             &slashy &kp L  &kp D  &kp W  &kp V  &none
+&kp TAB    &kp SQT  &kp X     &kp COMMA &kp DOT  &kp EQUAL                                                             &slashy &kp L  &kp D  &kp W  &kp V  &none
 &kp Q      &kp C    &kp I     &kp E     &kp A    &kp MINUS                                                             &kp K   &kp H  &kp T  &kp N  &kp S  &kp Z
 &none      &kp B    &kp Y     &kp U     &kp O    &kp QUESTION &none           &none       &none   &none  &none  &none  &kp J   &kp M  &kp G  &kp P  &kp F  &none
-&magic 2 0 &none    &none     &none     &none                 &mt LCTRL ENTER &lshft_caps GUMESC  NAVBSP NUMSPC &kp R          &none  &none  &none  &none  &none
+&magic 3 0 &none    &none     &none     &none                 &mt LCTRL ENTER &lshft_caps GUMESC  NAVBSP NUMSPC &kp R          &none  &none  &none  &none  &none
             >;
         };
 
