@@ -402,6 +402,9 @@ combos {
 #define PTAB &kp LC(LS(TAB))
 #define NTAB &kp LC(TAB)
 
+#define VOLU &kp C_VOL_UP
+#define VOLD &kp C_VOL_DN
+
 #define HRML(k1,k2,k3,k4) &lh_hr_mt LSHFT k1 &lh_hr_mt LALT k2 &lh_hr_mt LCTRL k3 &lh_hr_mt LGUI k4
 #define HRMR(k1,k2,k3,k4) &rh_hr_mt LGUI k1 &rh_hr_mt LCTRL k2 &rh_hr_mt LALT k3 &rh_hr_mt LSHFT k4
 
