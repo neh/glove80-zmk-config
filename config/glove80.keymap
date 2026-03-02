@@ -212,11 +212,13 @@
 
 /* Set layer names */
 #define BASE 0
-#define NAV 1
-#define MAGIC 2
-#define NUM 3
-#define SYM 4
-#define FUN 5
+#define GAME 1
+#define NAV 2
+#define MAGIC 3
+#define NUM 4
+#define GUM 5
+#define SYM 6
+#define FUN 7
 
 
 /* Convert NAME parameters into a ZMK label string */
