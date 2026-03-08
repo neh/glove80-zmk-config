@@ -444,22 +444,22 @@ combos {
 
         BASE {
             bindings = <
-&none      &none    &none     &none     &none                                                                      &none  &none  &none  &none  &none
-&kp GRAVE  &kp N1   &kp N2    &kp N3    &kp N4   &kp N5                                                    &kp N6  &kp N7 &kp N8 &kp N9 &kp N0 &none
-&kp TAB    &kp SQT  &kp X     &com_sem  &dot_col &kp EQUAL                                                 &slashy &kp L  &kp D  &kp W  &kp V  &none
-&kp Q      HRML(C,  I,        E,        A)       &kp MINUS                                                 &kp K   HRMR(H,T,     N,     S)     &kp Z
-&none      &kp B    &kp Y     &kp U     &kp O    &quebng   &none  &none       &none   &none  &none  &none  &kp J   &kp M  &kp G  &kp P  &kp F  &none
-&magic 3 0 &none    &none     &none     &none              NAVRET &lshft_caps NUMESC  FUNBSP NUMSPC &kp R          &none  &none  &none  &none  &none
+&none      &none    &none     &none     &none                                                                       &none  &none  &none  &none  &none
+&kp GRAVE  &kp N1   &kp N2    &kp N3    &kp N4   &kp N5                                                    &kp N6   &kp N7 &kp N8 &kp N9 &kp N0 &none
+&kp TAB    &kp SQT  &kp X     &kp COMMA &kp DOT  &kp EQUAL                                                 &kp BSLH &kp L  &kp D  &kp W  &kp V  &kp SLASH
+&kp Q      &kp C    HRML(I,   E,        A)       &kp MINUS                                                 &kp K    HRMR(H,T,     N)     &kp S  &kp Z
+&kp LSHFT  &kp B    &kp Y     &kp U     &kp O    &kp SEMI  &none  &none       &none   &none  &none  &none  &kp J    &kp M  &kp G  &kp P  &kp F  &kp LSHFT
+&magic 3 0 &none    &none     &none     &none              NAVRET &lshft_caps NUMESC  FUNBSP NUMSPC &kp R           &none  &none  &none  &none  &none
             >;
         };
 
         GAME {
             bindings = <
 &none      &none    &none     &none     &none                                                                                  &none  &none  &none  &none  &none
-&kp GRAVE  &kp N1   &kp N2    &kp N3    &kp N4   &kp N5                                                                &kp N6  &kp N7 &kp N8 &kp N9 &kp N0 &none
-&kp TAB    &kp SQT  &kp X     &kp COMMA &kp DOT  &kp EQUAL                                                             &slashy &kp L  &kp D  &kp W  &kp V  &none
+&kp GRAVE  &kp N1   &kp N2    &kp N3    &kp N4   &kp N5                                                                &kp N6  &kp N7 &kp N8 &kp N9 &kp N0 &trans
+&kp TAB    &kp SQT  &kp X     &kp COMMA &kp DOT  &kp EQUAL                                                             &trans  &kp L  &kp D  &kp W  &kp V  &trans
 &kp Q      &kp C    &kp I     &kp E     &kp A    &kp MINUS                                                             &kp K   &kp H  &kp T  &kp N  &kp S  &kp Z
-&none      &kp B    &kp Y     &kp U     &kp O    &kp QUESTION &none           &none       &none   &none  &none  &none  &kp J   &kp M  &kp G  &kp P  &kp F  &none
+&trans     &kp B    &kp Y     &kp U     &kp O    &kp SEMI     &none           &none       &none   &none  &none  &none  &kp J   &kp M  &kp G  &kp P  &kp F  &trans
 &magic 3 0 &none    &none     &none     &none                 &mt LCTRL ENTER &lshft_caps GUMESC  NAVBSP NUMSPC &kp R          &none  &none  &none  &none  &none
             >;
         };
@@ -491,7 +491,7 @@ combos {
 &trans &trans      &trans    &trans &trans                                                                     &trans       &trans        &trans       &trans  &trans
 &trans &trans      &trans    &trans &trans &trans                                                    &trans    &trans       &trans        &trans       &trans  &trans
 &trans &kp PERCENT &kp CARET &kp N0 &kp N9 &kp AMPS                                                  &kp TILDE &kp GRAVE    &kp LS(LBKT)  &kp LS(RBKT) &trans  &trans
-&trans HRML(N4,    N3,       N2,    N1)    &kp DOLLAR                                                &kp PIPE  HRMR(LS(N9), LBKT,         RBKT,        LS(N0)) &trans
+&trans &kp N4      HRML(N3,  N2,    N1)    &kp DOLLAR                                                &kp PIPE  HRMR(LS(N9), LBKT,         RBKT)        LS(N0)  &trans
 &trans &kp N8      &kp N7    &kp N6 &kp N5 &kp HASH &trans    &trans  &trans    &trans &trans &trans &kp AT    &kp STAR     &kp LS(COMMA) &kp LS(DOT)  &trans  &trans
 &trans &trans      &trans    &trans &trans          &trans    &trans  &trans    &trans &trans &trans           &trans       &trans        &trans       &trans  &trans
             >;
@@ -502,7 +502,7 @@ combos {
 &trans &trans      &trans    &trans &trans                                                                     &trans       &trans        &trans       &trans  &trans
 &trans &trans      &trans    &trans &trans &trans                                                    &trans    &trans       &trans        &trans       &trans  &trans
 &trans &kp PERCENT &kp CARET &kp N0 &kp N9 &kp AMPS                                                  &kp TILDE &kp GRAVE    &kp LS(LBKT)  &kp LS(RBKT) &trans  &trans
-&trans &kp N4      &kp N3    &kp N2 &kp N1 &kp DOLLAR                                                &kp PIPE  HRMR(LS(N9), LBKT,         RBKT,        LS(N0)) &trans
+&trans &kp N4      &kp N3    &kp N2 &kp N1 &kp DOLLAR                                                &kp PIPE  HRMR(LS(N9), LBKT,         RBKT)        LS(N0)  &trans
 &trans &kp N8      &kp N7    &kp N6 &kp N5 &kp HASH &trans    &trans  &trans    &trans &trans &trans &kp AT    &kp STAR     &kp LS(COMMA) &kp LS(DOT)  &trans  &trans
 &trans &trans      &trans    &trans &trans          &trans    &trans  &trans    &trans &trans &trans           &trans       &trans        &trans       &trans  &trans
             >;
