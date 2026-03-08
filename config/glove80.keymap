@@ -217,8 +217,7 @@
 #define MAGIC 3
 #define NUM 4
 #define GUM 5
-#define SYM 6
-#define FUN 7
+#define FUN 6
 
 
 /* Convert NAME parameters into a ZMK label string */
@@ -435,7 +434,6 @@ combos {
 #define FUNR &rt_lt FUN R
 #define NUMSPC &ht_lt NUM SPACE
 #define NUMBSPC &ht_lt NUM BSPC
-#define SYMRET &ht_lt SYM ENTER
 
 / {
     keymap {
@@ -505,17 +503,6 @@ combos {
 &trans &kp N4      &kp N3    &kp N2 &kp N1 &kp DOLLAR                                                &kp PIPE  HRMR(LS(N9), LBKT,         RBKT)        &kp LS(N0) &trans
 &trans &kp N8      &kp N7    &kp N6 &kp N5 &kp HASH &trans    &trans  &trans    &trans &trans &trans &kp AT    &kp STAR     &kp LS(COMMA) &kp LS(DOT)  &trans     &trans
 &trans &trans      &trans    &trans &trans          &trans    &trans  &trans    &trans &trans &trans           &trans       &trans        &trans       &trans     &trans
-            >;
-        };
-
-        SYM {
-            bindings = <
-&trans &trans        &trans     &trans     &trans                                                                                      &trans   &trans        &trans   &trans    &trans
-&trans &trans        &trans     &trans     &trans     &trans                                                                    &trans &trans   &trans        &trans   &trans    &trans
-&trans &kp LS(LBKT)  &kp LS(N9) &kp LS(N8) &kp LS(N7) &kp LS(RBKT)                                                              &trans &trans   &trans        &trans   &trans    &trans
-&trans &kp LS(N0)    &kp LS(N3) &kp AT     &kp EXCL   &kp LS(FSLH)                                                              &trans &kp LGUI &kp RCTRL     &kp LALT &kp LSHFT &trans
-&trans &kp LS(GRAVE) &kp LS(N6) &kp LS(N5) &kp LS(N4) &kp LS(BSLH) &trans        &trans      &trans        &trans &trans &trans &trans &trans   &kp LS(EQUAL) &trans   &trans    &trans
-&trans &trans        &trans     &trans     &trans                  &kp LS(COMMA) &kp LS(DOT) &kp LS(MINUS) &trans &trans &trans        &trans   &trans        &trans   &trans    &trans
             >;
         };
 
