@@ -499,8 +499,8 @@ combos {
             bindings = <
 &trans &trans      &trans    &trans &trans                                                                     &trans       &trans        &trans       &trans     &trans
 &trans &trans      &trans    &trans &trans &trans                                                    &trans    &trans       &trans        &trans       &trans     &trans
-&trans &trans      &trans    &trans &trans &trans                                                    &trans    &trans       &trans        &trans       &trans     &trans
-&trans &trans      &trans    &trans &trans &trans                                                    &trans    &trans       &trans        &trans       &trans     &trans
+&trans &trans      &trans    &kp N0 &kp N9 &trans                                                    &trans    &trans       &trans        &trans       &trans     &trans
+&trans &kp N4      &kp N3    &kp N2 &kp N1 &trans                                                    &trans    &trans       &trans        &trans       &trans     &trans
 &trans &kp N8      &kp N7    &kp N6 &kp N5 &trans   &trans    &trans  &trans    &trans &trans &trans &trans    &trans       &trans        &trans       &trans     &trans
 &trans &trans      &trans    &trans &trans          &trans    &trans  &trans    &trans &trans &trans           &trans       &trans        &trans       &trans     &trans
             >;
