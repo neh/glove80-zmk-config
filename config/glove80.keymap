@@ -467,7 +467,7 @@ combos {
 &trans &trans      &trans     &trans    &trans                                                                         &trans   &trans    &trans    &trans    &trans
 &trans &trans      &trans     &trans    &trans     &trans                                                       &trans &trans   &trans    &trans    &trans    &trans
 &trans &none       VOLU       VOLD      &none      &none                                                        &trans PTAB     &none     &none     NTAB      &trans
-&trans HRML(LC(C), LC(X),     LA(X),    LG(TAB))   &none                                                        &trans &kp LEFT &kp UP    &kp DOWN  &kp RIGHT &trans
+&trans HRML(LC(C), LC(X),     LA(X),    LC(G))     &none                                                        &trans &kp LEFT &kp UP    &kp DOWN  &kp RIGHT &trans
 &trans &kp C_PREV  &kp C_MUTE &kp C_PP  &kp C_NEXT &none     &trans  &trans  &trans  &trans   &trans  &trans    &trans &kp HOME &kp PG_UP &kp PG_DN &kp END   &trans
 &trans &trans      &trans     &trans    &trans               &trans  &trans  &trans  &kp BSPC &trans  &tog GAME     &trans   &trans    &trans    &trans    &trans
             >;
